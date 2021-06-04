@@ -17,6 +17,7 @@ int removeDuplicates(int arr[], int arr_size)
         arr[j++] = arr[arr_size-1];
     }
 
+    printf("remove the duplicate element\n");
     return j;
 }
 
