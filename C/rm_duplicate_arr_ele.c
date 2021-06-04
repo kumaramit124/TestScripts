@@ -1,28 +1,42 @@
 /* C program to remove duplicate elements in an array */
 #include<stdio.h>
+
 // Code without the usage of pointers
 int remove_duplicate_elements(int arr[], int n)
 {
 
 	if (n==0 || n==1)
+	{
 		return n;
+	}
 
 	int temp[n];
 
 	int j = 0;
 	int i;
 	for (i=0; i<n-1; i++)
+	{
 		if (arr[i] != arr[i+1])
+		{
 			temp[j++] = arr[i];
+		}
 	temp[j++] = arr[n-1];
+	}
 
 	for (i=0; i<j; i++)
+	{
 		arr[i] = temp[i];
+	}
 
+	printf("Return the duplicate element\n");
 	return j;
 }
 
-
+/** @fun    : main
+ *  @desc   : The main function which calles the method to cal the
+ *            duplicate element in an array
+ *  @return : On sucess fun return 0
+ * */
 int main()
 {
 	int n;
@@ -34,7 +48,7 @@ int main()
 	{
 		printf("%d",arr[i]);
 	}
-printf("\n");
+        printf("\n");
 	n = remove_duplicate_elements(arr, n);
 
 

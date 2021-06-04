@@ -3,21 +3,21 @@
 int removeDuplicates(int arr[], int arr_size)
 {
     int i,j;	
-    if (arr_size==0 || arr_size==1)
+    if (arr_size==0 || arr_size==1) {
         return arr_size;
+    }
 
- //start traverse an element
- j = 0; 
- for(i=0; i<arr_size-1; i++)
- {
+    //start traverse an element
+    j = 0;
+    for(i=0; i<arr_size-1; i++)
+    {
 	if(arr[i] != arr[i+1]) {
             arr[j++] = arr[i];	
 	}
- }
-    arr[j++] = arr[arr_size-1];	
- //}
+        arr[j++] = arr[arr_size-1];
+    }
 
- return j;
+    return j;
 }
 
 int main()
