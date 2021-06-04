@@ -16,9 +16,9 @@ int sumOfDigit(int num)
 {
     int s=0, a=0;
     s = s + (num%10);
-	printf("s:%d\n",s);    
+	printf("s:%d\n",s);
     a = num/10;
-	printf(":%d\n",a);    
+	printf(":%d\n",a);
     if(a > 0)
     {
         sumOfDigit(a);
