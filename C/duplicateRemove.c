@@ -35,7 +35,7 @@ int main()
     printf("duplicate: %d\n", n);
     for(i=0; i<n; i++)
     {
-	    printf("Arr: %d\n", arr[i]);
+        printf("Arr: %d\n", arr[i]);
     }
     return 0;
 }
